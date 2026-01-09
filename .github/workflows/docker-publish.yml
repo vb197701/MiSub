@@ -1,8 +1,8 @@
 name: Publish Docker Image
 
-on:
+于:
   push:
-    branches:
+    分支:
       - main
   workflow_dispatch:
 
@@ -31,8 +31,8 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: ghcr.io/imzyb/misub
-          tags: |
+          images: ghcr.io/vb197701/misub
+          标签: |
             type=ref,event=branch
             type=sha
             type=raw,value=latest,enable={{is_default_branch}}
